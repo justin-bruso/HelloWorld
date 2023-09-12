@@ -1,42 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My First HTML Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Hello, world!</h1>
-  <p>This is my first HTML page.</p>
+<html lang="en">
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
+    <head>
+        <!-- In a real page, we would have a <script> tag here
+            referencing a .js file to bring the javascript into
+            the page.  On JSFiddle, we just write code in the
+            Javascript frame, and it's brought in automagically.
+         -->
+    </head>
 
-  <!--home section content-->
-  <section id="home">
-    <h1>Home</h1>
-    <p>home section</p>
-  </section>
-  <!--about section content-->
-  <section id="about">
-    <h2>About</h2>
-    <p>about section</p>
-  </section>
-  <!--projects section content-->
-  <section id="projects">
-    <p>projects section</p>
-  </section>
-  <!--contacts section content-->
-  <section id="contacts">
-    <p>contacts section</p>
-  </section>
-  
-</body>
+    <body>
+        <h1>
+            An Interactive Page
+        </h1>
+        <input type="button" id="btnadd" value="Add">
+        <input type="button" id="btndel" value="Delete">
+        <input type="button" id="btnshuffle" value="Shuffle">
+        <input type="button" id="btnparty" value="Party!">
+        <!-- Write javascript code for the buttons above:
+        - Add:     Adds a new <li> element to the <ul> below.
+                   Put a random number or random word or something
+                   interesting in each new <li>.
+        - Delete:  Deletes the first <li> in the <ul> below.
+        - Shuffle: Randomly re-orders the <li> elements in the
+                   <ul> below.
+        - Party!:  Make something interesting happen on the page.
+                   (Get creative.  Go crazy.)
+    
+        The MDN section covering creating new elements:
+        https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#creating_and_placing_new_nodes
+        Refer to other assigned guides as needed.-->
+        <ul id="contents"></ul>
+    </body>
+
 </html>
